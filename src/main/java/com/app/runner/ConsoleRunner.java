@@ -16,6 +16,9 @@ public class ConsoleRunner implements CommandLineRunner {
 		System.out.println(repo.getClass().getName());
 		Product p = repo.save(new Product("Ashu", 3.2));
 		System.out.println(p);
+		repo.save(new Product("Karn", 5.6));
+		repo.save(new Product("Aditya", 6.7));
+		System.out.println("Done");
 	}
 
 }
